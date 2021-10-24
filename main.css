@@ -1,0 +1,66 @@
+html, body {
+    background:#232323;
+    font: 1.3rem Inconsolata, monospace;
+    color: #ebebeb;
+    text-shadow: 0 0 3px #C8C8C8;
+    margin: 0px;
+    padding: 0px;
+  }
+
+.container {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+::selection {
+    background: #525252;
+    text-shadow: none;
+  }
+
+.terminal {
+    background-color: #212121;
+    padding: 3rem;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: #808080;
+    box-shadow: 2px 2px 5px #C8C8C8;
+}
+
+.blinking {
+    animation: opacity 1s ease-in-out infinite;
+    opacity: 1;
+  }
+
+p {
+    margin: 0;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 1px #C8C8C8;
+    }
+
+    50% {
+        text-shadow: 0 0 10px #C8C8C8;
+    }
+
+    100% {
+        text-shadow: 0 0 1px #C8C8C8;
+    }
+}
