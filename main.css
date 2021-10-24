@@ -20,6 +20,7 @@ html, body {
   }
 
 .terminal {
+    min-width: max-content;
     background-color: #212121;
     padding: 3rem;
     border-style: solid;
