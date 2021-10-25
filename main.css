@@ -1,5 +1,5 @@
 html, body {
-    background:#232323;
+    background:#242424;
     font: 1.3rem Inconsolata, monospace;
     color: #ebebeb;
     text-shadow: 0 0 3px #C8C8C8;
@@ -20,13 +20,69 @@ html, body {
   }
 
 .terminal {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: fit-content;
+    /* padding: 3rem; */
+    /* border-style: solid;
+    border-radius: 20px;
+    border-color: #808080; */
+
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 1.5rem;
+    background-color: #212121;
+    border-radius: 20px 20px 0px 0px;
+    border-style: solid;
+    border-color: #808080 #808080 #808080 #808080;
+    box-shadow: 2px 2px 5px #C8C8C8;
+
+
+
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently */
+}
+
+.bartitle {
+    padding-left: 1.5rem;
+}
+
+.buttons {
+    padding-right: 1.5rem;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: #C8C8C8;
+    border-radius: 50%;
+    display: inline-block;
+    box-shadow: 0px 0px 3px #C8C8C8;
+}
+
+.dot:hover {
+    box-shadow: 0px 0px 5px #C8C8C8;
+}
+
+.window {
+    width: fit-content;
+    padding: 3rem;
     min-width: max-content;
     background-color: #212121;
-    padding: 3rem;
+    border-radius: 0px 0px 20px 20px;
+    border-top: 0px;
     border-style: solid;
-    border-radius: 20px;
-    border-color: #808080;
     box-shadow: 2px 2px 5px #C8C8C8;
+    border-color: #808080 #808080 #808080 #808080;
 }
 
 .blinking {
@@ -35,7 +91,7 @@ html, body {
   }
 
 p {
-    margin: 0;
+    margin: 5px;
 }
 
 @keyframes opacity {
@@ -52,16 +108,4 @@ p {
     }
 }
 
-@keyframes glow {
-    0% {
-        text-shadow: 0 0 1px #C8C8C8;
-    }
 
-    50% {
-        text-shadow: 0 0 10px #C8C8C8;
-    }
-
-    100% {
-        text-shadow: 0 0 1px #C8C8C8;
-    }
-}
